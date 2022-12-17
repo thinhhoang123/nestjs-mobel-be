@@ -24,7 +24,7 @@ export class ProductsService {
   }
 
   async getDiscoverProduct(): Promise<any> {
-    const LIMIT_ITEMS = 8;
+    const LIMIT_ITEMS = 10;
     return await this.productsRepository.findWithLimit(LIMIT_ITEMS);
   }
 }
