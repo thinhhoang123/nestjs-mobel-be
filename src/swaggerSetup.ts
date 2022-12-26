@@ -11,7 +11,7 @@ export class swaggerSetup {
       .setTitle('Möbel')
       .setDescription('The Möbel API description')
       .setVersion('1.0')
-      .addTag('Möbel')
+      .addBearerAuth()
       .build();
     const document = SwaggerModule.createDocument(this.app, config);
     SwaggerModule.setup('api', this.app, document);
